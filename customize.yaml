@@ -1,0 +1,29 @@
+switch.light_patio:
+  icon: mdi:lightbulb
+switch.light_entryway:
+  icon: mdi:lightbulb
+switch.light_dining_room:
+  icon: mdi:lightbulb
+switch.light_living_room:
+  icon: mdi:lightbulb
+switch.light_kitchen_overhead:
+  icon: mdi:lightbulb
+switch.light_laundry_hallway:
+  icon: mdi:lightbulb
+switch.light_banister:
+  icon: mdi:lightbulb
+switch.light_upstairs_hallway:
+  icon: mdi:lightbulb
+light.ceiling_fan_upstairs:
+  icon: mdi:fan
+switch.ceiling_fan_living_room:
+  icon: mdi:fan
+binary_sensor.garage_door:
+  friendly_name: Garage Door State
+  icon: mdi:garage-alert
+cover.garage_door:
+  icon: mdi:garage
+weather.main_floor:
+  friendly_name: Commerce City Weather
+zone.home:
+  radius: 200

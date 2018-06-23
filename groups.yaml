@@ -1,0 +1,98 @@
+##--Group Views--##
+
+  default_view:
+    view: yes
+    icon: mdi:home
+    entities:
+      - group.climate
+      - group.ecobee_sensors
+      - group.awesome_people
+  main_floor:
+    name: main floor
+    view: yes
+    entities:
+      - binary_sensor.main_floor_occupancy
+      - group.garage
+      - group.main_floor_lights
+      - group.main_floor_ceiling_fans
+      - group.front_door_lock
+  upstairs:
+    name: upstairs
+    view: yes
+    entities:
+      - binary_sensor.joels_room_occupancy
+      - binary_sensor.scotts_room_occupancy
+      - binary_sensor.upstairs_occupancy
+      - group.upstairs_lights
+      - group.upstairs_ceiling_fans
+  zwave_status:
+    name: zwave
+    view: yes
+    entities:
+      - group.zwave_device_status
+
+##--Groups--##
+
+  Climate:
+    entities:
+      - weather.main_floor
+      - climate.main_floor
+
+  Awesome People:
+      - device_tracker.windwaker_iphone
+      - device_tracker.sanmai
+
+  EcoBee Sensors:
+      - sensor.joels_room_temperature
+      - sensor.main_floor_temperature
+      - sensor.scotts_room_temperature
+      - sensor.upstairs_temperature
+
+  ZWave Device Status:
+      - zwave.leviton_dz15s1bz_decora_smart_switch
+      - zwave.leviton_dz15s1bz_decora_smart_switch_2
+      - zwave.leviton_dz15s1bz_decora_smart_switch_3
+      - zwave.leviton_dz15s1bz_decora_smart_switch_4
+      - zwave.leviton_dz15s1bz_decora_smart_switch_5
+      - zwave.leviton_dz15s1bz_decora_smart_switch_6
+      - zwave.leviton_dz15s1bz_decora_smart_switch_7
+      - zwave.leviton_dz15s1bz_decora_smart_switch_8
+      - zwave.leviton_dz6hd1bz_decora_600w_smart_dimmer
+      - zwave.schlage_be469_touchscreen_deadbolt
+      - zwave.zwaveme_razberry_controller_2016_zwave
+
+  Garage: 
+      - cover.garage_door
+
+  Main Floor Lights:
+      - switch.light_patio
+      - switch.light_entryway
+      - switch.light_dining_room
+      - switch.light_living_room
+      - switch.light_kitchen_overhead
+      - switch.light_laundry_hallway
+
+  Main Floor Ceiling Fans:
+      - switch.ceiling_fan_living_room
+
+  Front Door Lock:
+    entities:
+      - lock.frontdoor_deadbolt
+
+  Upstairs Lights:
+      - switch.light_banister
+      - switch.light_upstairs_hallway
+
+  Upstairs Ceiling Fans:
+      - light.ceiling_fan_upstairs
+
+  All Light Switches:
+      - switch.light_patio
+      - switch.light_entryway
+      - switch.light_dining_room
+      - switch.light_living_room
+      - switch.light_kitchen_overhead
+      - switch.light_laundry_hallway
+      - switch.light_banister
+      - switch.light_upstairs_hallway
+

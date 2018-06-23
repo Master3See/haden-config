@@ -1,0 +1,11 @@
+#################################################
+#          ---- MQTT Switches ---               #
+#################################################
+#switches 
+  - platform: mqtt
+    name: "Garage Door"
+    command_topic: "hass/out/garagedoor/command"
+    state_topic: "hass/in/garagedoor/state"
+    available_topic: "hass/in/garagedoor/available"
+    retain: true
+    optimistic: false

@@ -1,0 +1,18 @@
+
+windwaker_iphone:
+  hide_if_away: false
+  icon:
+  mac:
+  name: Scott's iPhone
+  picture: /local/scott.jpg
+  track: true
+  vendor: Apple
+
+sanmai:
+  hide_if_away: false
+  icon:
+  mac:
+  name: sanmai
+  picture: /local/joel.jpg
+  track: true
+  vendor:
