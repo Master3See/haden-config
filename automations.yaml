@@ -1,1 +1,13 @@
-[]
+- id: '1529795212321'
+  alias: Garage Door Left Open - Notify
+  trigger:
+  - entity_id: cover.garage_door
+    platform: state
+    from: closed
+    to: open
+    for: 
+      minutes: 15
+  action:
+  - data: 
+      message: "Garage door has been open for 15 minutes."
+    service: notify.notify
