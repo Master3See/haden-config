@@ -7,7 +7,7 @@
       - group.climate
       - group.ecobee_sensors
       - group.awesome_people
-  main_floor:
+  main_floor_view:
     name: main floor
     view: yes
     entities:
@@ -15,8 +15,8 @@
       - group.garage
       - group.front_door_lock
       - group.main_floor_lights
-      - group.main_floor_ceiling_fans
-  upstairs:
+      - group.main_floor_ceiling_fan
+  upstairs_view:
     name: upstairs
     view: yes
     entities:
@@ -25,30 +25,42 @@
       - binary_sensor.upstairs_occupancy
       - group.upstairs_lights
       - group.upstairs_ceiling_fans
-  zwave_status:
+  zwave_status_view:
     name: zwave
     view: yes
     entities:
       - group.zwave_device_status
+  automations_view:
+    name: automations
+    view: yes
+    entities:
+      -  group.notification_automations
 
 ##--Groups--##
 
-  Climate:
+  climate:
+    name: Climate
     entities:
       - weather.main_floor
       - climate.main_floor
 
-  Awesome People:
+  awesome_people:
+    name: Awesome People
+    entities:
       - device_tracker.windwaker_iphone
       - device_tracker.sanmai
 
-  EcoBee Sensors:
+  ecobee_sensors:
+    name: EcoBee Sensors
+    entities:
       - sensor.joels_room_temperature
       - sensor.main_floor_temperature
       - sensor.scotts_room_temperature
       - sensor.upstairs_temperature
 
-  ZWave Device Status:
+  zwave_device_status:
+    name: ZWave Device Status
+    entities:
       - zwave.porch_switch
       - zwave.living_room_ceiling_fan_switch
       - zwave.living_room_light_switch
@@ -62,10 +74,14 @@
       - zwave.frontdoor_deadbolt
       - zwave.zwave_controller
 
-  Garage: 
+  garage:
+    name: Garage 
+    entities:
       - cover.garage_door
 
-  Main Floor Lights:
+  main_floor_lights:
+    name: Main Floor Lights
+    entities:
       - switch.light_porch
       - switch.light_entryway
       - switch.light_dining_room
@@ -73,21 +89,30 @@
       - switch.light_kitchen
       - switch.light_laundry_hallway
 
-  Main Floor Ceiling Fans:
+  main_floor_ceiling_fan:
+    name: Main Floor Ceiling Fan
+    entities:
       - switch.ceiling_fan_living_room
 
-  Front Door Lock:
+  front_door_lock:
+    name: Front Door Lock
     entities:
       - lock.frontdoor_deadbolt_locked
 
-  Upstairs Lights:
+  upstairs_lights:
+    name: Upstairs Lights
+    entities:
       - switch.light_stairway
       - switch.light_upstairs_hallway
 
-  Upstairs Ceiling Fans:
+  upstairs_ceiling_fans:
+    name: Upstairs Ceiling Fans
+    entities:
       - light.ceiling_fan_upstairs
 
-  All Light Switches:
+  all_light_switches:
+    name: All Light Switches
+    entities:
       - switch.light_porch
       - switch.light_entryway
       - switch.light_dining_room
@@ -96,4 +121,9 @@
       - switch.light_laundry_hallway
       - switch.light_stairway
       - switch.light_upstairs_hallway
+
+  notification_automations:
+    name: Notification Automations
+    entities:
+      - automation.garage_door_left_open__notify
 

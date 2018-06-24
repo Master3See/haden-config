@@ -63,7 +63,7 @@ switch.light_porch:
   name: Porch Light
   platform: zwave
   unique_id: 4-72057594109837312
-switch.living_room_ceiling_fan_switch:
+switch.ceiling_fan_living_room:
   config_entry_id:
   name: Living Room Ceiling Fan
   platform: zwave
@@ -148,3 +148,23 @@ sensor.frontdoor_deadbolt_alarm_level:
   name:
   platform: zwave
   unique_id: 2-72057594077528081
+sensor.windwaker__battery_state:
+  config_entry_id:
+  name:
+  platform: ios
+  unique_id: state_windwaker_iPhone
+sensor.sanmai_battery_state:
+  config_entry_id:
+  name:
+  platform: ios
+  unique_id: state_sanmai
+sensor.sanmai_battery_level:
+  config_entry_id:
+  name:
+  platform: ios
+  unique_id: level_sanmai
+sensor.windwaker__battery_level:
+  config_entry_id:
+  name:
+  platform: ios
+  unique_id: level_windwaker_iPhone
