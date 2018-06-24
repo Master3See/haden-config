@@ -13,9 +13,9 @@
     entities:
       - binary_sensor.main_floor_occupancy
       - group.garage
+      - group.front_door_lock
       - group.main_floor_lights
       - group.main_floor_ceiling_fans
-      - group.front_door_lock
   upstairs:
     name: upstairs
     view: yes
@@ -49,27 +49,28 @@
       - sensor.upstairs_temperature
 
   ZWave Device Status:
-      - zwave.leviton_dz15s1bz_decora_smart_switch
-      - zwave.leviton_dz15s1bz_decora_smart_switch_2
-      - zwave.leviton_dz15s1bz_decora_smart_switch_3
-      - zwave.leviton_dz15s1bz_decora_smart_switch_4
-      - zwave.leviton_dz15s1bz_decora_smart_switch_5
-      - zwave.leviton_dz15s1bz_decora_smart_switch_6
-      - zwave.leviton_dz15s1bz_decora_smart_switch_7
-      - zwave.leviton_dz15s1bz_decora_smart_switch_8
-      - zwave.leviton_dz6hd1bz_decora_600w_smart_dimmer
-      - zwave.schlage_be469_touchscreen_deadbolt
-      - zwave.zwaveme_razberry_controller_2016_zwave
+      - zwave.porch_switch
+      - zwave.living_room_ceiling_fan_switch
+      - zwave.living_room_light_switch
+      - zwave.dining_room_light_switch
+      - zwave.stairway_light_switch
+      - zwave.kitchen_light_switch
+      - zwave.laundry_hallway_light_switch
+      - zwave.upstairs_hallway_light_switch
+      - zwave.loft_ceiling_fan_dimmer_switch
+      - zwave.entryway_light_switch
+      - zwave.frontdoor_deadbolt
+      - zwave.zwave_controller
 
   Garage: 
       - cover.garage_door
 
   Main Floor Lights:
-      - switch.light_patio
+      - switch.light_porch
       - switch.light_entryway
       - switch.light_dining_room
       - switch.light_living_room
-      - switch.light_kitchen_overhead
+      - switch.light_kitchen
       - switch.light_laundry_hallway
 
   Main Floor Ceiling Fans:
@@ -77,22 +78,22 @@
 
   Front Door Lock:
     entities:
-      - lock.frontdoor_deadbolt
+      - lock.frontdoor_deadbolt_locked
 
   Upstairs Lights:
-      - switch.light_banister
+      - switch.light_stairway
       - switch.light_upstairs_hallway
 
   Upstairs Ceiling Fans:
       - light.ceiling_fan_upstairs
 
   All Light Switches:
-      - switch.light_patio
+      - switch.light_porch
       - switch.light_entryway
       - switch.light_dining_room
       - switch.light_living_room
-      - switch.light_kitchen_overhead
+      - switch.light_kitchen
       - switch.light_laundry_hallway
-      - switch.light_banister
+      - switch.light_stairway
       - switch.light_upstairs_hallway
 

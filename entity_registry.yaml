@@ -1,0 +1,150 @@
+zwave.zwave_controller:
+  config_entry_id:
+  name: Z-Wave Controller
+  platform: zwave
+  unique_id: node-1
+zwave.porch_switch:
+  config_entry_id:
+  name: Porch Light Switch
+  platform: zwave
+  unique_id: node-4
+zwave.living_room_ceiling_fan_switch:
+  config_entry_id:
+  name: Living Room Ceiling Fan Switch
+  platform: zwave
+  unique_id: node-5
+zwave.living_room_light_switch:
+  config_entry_id:
+  name: Living Room Light Switch
+  platform: zwave
+  unique_id: node-8
+zwave.dining_room_light_switch:
+  config_entry_id:
+  name: Dining Room Light Switch
+  platform: zwave
+  unique_id: node-9
+zwave.stairway_light_switch:
+  config_entry_id:
+  name: Stairway Light Switch
+  platform: zwave
+  unique_id: node-10
+zwave.kitchen_light_switch:
+  config_entry_id:
+  name: Kitchen Light Switch
+  platform: zwave
+  unique_id: node-11
+zwave.laundry_hallway_light_switch:
+  config_entry_id:
+  name: Laundry Hallway Light Switch
+  platform: zwave
+  unique_id: node-12
+zwave.upstairs_hallway_light_switch:
+  config_entry_id:
+  name: Upstairs Hallway Light Switch
+  platform: zwave
+  unique_id: node-13
+zwave.loft_ceiling_fan_dimmer_switch:
+  config_entry_id:
+  name: Loft Ceiling Fan Dimmer Switch
+  platform: zwave
+  unique_id: node-14
+zwave.entryway_light_switch:
+  config_entry_id:
+  name: Entryway Light Switch
+  platform: zwave
+  unique_id: node-15
+zwave.frontdoor_deadbolt:
+  config_entry_id:
+  name: Frontdoor Deadbolt
+  platform: zwave
+  unique_id: node-2
+switch.light_porch:
+  config_entry_id:
+  name: Porch Light
+  platform: zwave
+  unique_id: 4-72057594109837312
+switch.living_room_ceiling_fan_switch:
+  config_entry_id:
+  name: Living Room Ceiling Fan
+  platform: zwave
+  unique_id: 5-72057594126614528
+switch.light_living_room:
+  config_entry_id:
+  name: Living Room Light
+  platform: zwave
+  unique_id: 8-72057594176946176
+switch.light_dining_room:
+  config_entry_id:
+  name: Dining Room Light
+  platform: zwave
+  unique_id: 9-72057594193723392
+switch.light_stairway:
+  config_entry_id:
+  name: Stairway Light
+  platform: zwave
+  unique_id: 10-72057594210500608
+switch.light_kitchen:
+  config_entry_id:
+  name: Kitchen Light
+  platform: zwave
+  unique_id: 11-72057594227277824
+switch.light_laundry_hallway:
+  config_entry_id:
+  name: Laundry Room Hallway Light
+  platform: zwave
+  unique_id: 12-72057594244055040
+switch.light_upstairs_hallway:
+  config_entry_id:
+  name: Upstairs Hallway Light
+  platform: zwave
+  unique_id: 13-72057594260832256
+light.loft_ceiling_fan_dimmer:
+  config_entry_id:
+  name: Loft Ceiling Fan
+  platform: zwave
+  unique_id: 14-72057594277625857
+switch.light_entryway:
+  config_entry_id:
+  name: Entryway Light
+  platform: zwave
+  unique_id: 15-72057594294386688
+lock.frontdoor_deadbolt_locked:
+  config_entry_id:
+  name: Front Door Deadbolt
+  platform: zwave
+  unique_id: 2-72057594077282304
+sensor.frontdoor_deadbolt_sourcenodeid:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 2-72057594077528097
+sensor.frontdoor_deadbolt_access_control:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 2-72057594077528209
+sensor.frontdoor_deadbolt_burglar:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 2-72057594077528225
+sensor.frontdoor_deadbolt_power_management:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 2-72057594077528241
+sensor.frontdoor_deadbolt_system:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 2-72057594077528257
+sensor.frontdoor_deadbolt_alarm_type:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 2-72057594077528065
+sensor.frontdoor_deadbolt_alarm_level:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 2-72057594077528081
